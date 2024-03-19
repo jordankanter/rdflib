@@ -32,6 +32,12 @@ class ParserError(Error):
         return self.msg
 
 
+class StoreError(Error):
+    """RDF Store Error"""
+    def __init__(self, values: Any):
+        super(StoreError, self).__init__("The store raised an error: store was: " + repr(values))
+
+
 class UniquenessError(Error):
     """A uniqueness assumption was made in the context, and that is not true"""
 
