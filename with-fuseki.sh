@@ -3,6 +3,7 @@
 # script_name="${0}"
 script_dirname="$( dirname -- "${0}" )"
 # script_basename="$( basename -- "${0}" )"
+ui=
 
 set -eo pipefail
 

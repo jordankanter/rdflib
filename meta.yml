@@ -1,0 +1,12 @@
+package:
+  name: sumordflib
+  version: 0.0.1
+
+source:
+  path: .
+
+requirements:
+  build:
+    - python
+    - requests
+    - lxml
