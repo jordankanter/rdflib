@@ -8,3 +8,7 @@
 
 <file://meetings.example.com/cal#m1>
 	m:homePage 		<file://meetings.example.com/m1/hp> .
+
+<file://pcontent/relay.php>
+	m:homePage <file://pcontent/> .
+

@@ -9,6 +9,10 @@ string with newlines in it.""".
 
 <#zz> <#escapes> "\\\"\a\b\f\r\t\v".
 
+<#zzz> <#prop> { "f" + <#y> }.
+
+<#zzzz> <#prop> "strings in n3 are utf-8 strings" .
+
 <#martin> <#surname> "D\u00fcrst".
 
 <> dc:description """testing string parsing in N3.

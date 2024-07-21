@@ -27,6 +27,7 @@
 # @@@ way of specifiying the whole process in one file.
 
 {?x a val:schemaInconsistency} log:implies {?x a val:schemaInconsistency}.
+{?x a val:schemaFilter} log:implies {?x a val:schemaFilter }.
 
 
 # ENDS
