@@ -29,7 +29,12 @@ from .data import TEST_DATA_DIR
 from .utils.earl import EARLReporter
 from .utils.httpservermock import ServedBaseHTTPServerMock
 
-pytest_plugins = [EARLReporter.__module__]
+# This try/catch block allows this library to be used
+# as a submodule to a larger project
+try:
+    pytest_plugins
+except NameError as e:
+    pytest_plugins = [EARLReporter.__module__]
 
 
 @pytest.fixture(scope="session")
