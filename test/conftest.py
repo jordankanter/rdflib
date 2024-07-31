@@ -31,10 +31,11 @@ from .utils.httpservermock import ServedBaseHTTPServerMock
 
 # This try/catch block allows this library to be used
 # as a submodule to a larger project
-try:
-    pytest_plugins
-except NameError as e:
-    pytest_plugins = [EARLReporter.__module__]
+# pytest_plugins = None
+# try:
+#     pytest_plugins
+# except NameError as e:
+#     pytest_plugins = [EARLReporter.__module__]
 
 
 @pytest.fixture(scope="session")
