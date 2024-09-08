@@ -15,6 +15,7 @@ classifiers=[
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: BSD License",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Operating System :: OS Independent",
@@ -46,6 +47,8 @@ berkeleydb = {version = "^18.1.0", optional = true}
 networkx = {version = ">=2,<4", optional = true}
 html5lib = {version = "^1.0", optional = true}
 lxml = {version = ">=4.3,<6.0", optional = true}
+orjson = {version = ">=3.9.14,<4", optional = true}
+#sumordflib is a fork of rdflib
 #rdflib = {version = "^7.1.0a0"}
 
 [tool.poetry.group.dev.dependencies]
@@ -59,7 +62,7 @@ pytest-cov = ">=4,<6"
 coverage = {version = "^7.0.1", extras = ["toml"]}
 types-setuptools = ">=68.0.0.3,<72.0.0.0"
 setuptools = ">=68,<72"
-wheel = ">=0.42,<0.44"
+wheel = ">=0.42,<0.45"
 
 [tool.poetry.group.docs.dependencies]
 sphinx = ">=7.1.2,<8"
@@ -69,13 +72,14 @@ sphinx-autodoc-typehints = ">=1.25.3,<=2.0.1"
 typing-extensions = "^4.5.0"
 
 [tool.poetry.group.lint.dependencies]
-ruff = ">=0.0.286,<0.5.5"
+ruff = ">=0.0.286,<0.7.0"
 
 [tool.poetry.extras]
 berkeleydb = ["berkeleydb"]
 networkx = ["networkx"]
 html = ["html5lib"]
 lxml = ["lxml"]
+orjson = ["orjson"]
 
 [build-system]
 requires = ["poetry-core>=1.4.0"]
